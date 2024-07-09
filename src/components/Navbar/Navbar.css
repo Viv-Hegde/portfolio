@@ -1,6 +1,6 @@
 .Navbar {
-    background-color: black;
-    font-weight: 600;
+    background-color: rgba(0, 0, 0);
+    /* font-weight: 600; */
     color: white;
     position: fixed; /* Makes the navbar static */
     top: 0;
@@ -13,7 +13,12 @@
     padding-left: 8vh;
     padding-right: 8vh;
     padding-bottom: 3vh;
-    font-size: 3vh;
+    font-size: 4vh;
+}
+
+.name {
+    font-size: 5vh;
+    font-weight: bolder;
 }
 
 a {
@@ -24,8 +29,13 @@ a {
 ul {
     margin: 0;
     display: flex;
+    align-items: center;
     gap: 2rem;
     list-style: none;
+}
+
+.nav-links li:hover {
+    color: #6b3e8b;
 }
 
 .hamburger {
