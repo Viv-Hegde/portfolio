@@ -1,10 +1,27 @@
 import './Navbar.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Navbar() {
   let [active, setActive] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="Navbar">
+    <nav className={['Navbar', isScrolled ? 'solid' : ''].join(' ')}>
         <a href="https://www.google.com" class="name">Vivek Hegde</a>
         <ul className={['nav-links', active ? 'active' : ''].join(' ')}>
             <li><a href="https://www.google.com">About</a></li>
