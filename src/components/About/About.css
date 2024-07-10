@@ -1,19 +1,18 @@
 .title {
-    font-size: 300%;
+    font-size: 5vh;
     font-weight: 700;
-    width: 15%;
+    width: 10%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: 8vh;
     border-radius: 20px;
-    border: 6px solid #b31cff;
+    border: 5px solid #b31cff;
     color: #8100c1;
     text-align: center;
-    padding: 2vh;
 }
 
 .wrapper img {
-    height: 62vh;
+    height: 20vh;
     width: auto;
 }
 
@@ -21,8 +20,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5vh;
-    width: 90%;
+    margin-top: 1vh;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,8 +30,7 @@
     align-self: flex-start;
     font-size: 3vh;
     color: #8100c1;
-    font-weight: 600;
-    width: 50%;
+    width: 70%;
 }
 
 @media (max-width: 1200px) {

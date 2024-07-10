@@ -10,6 +10,6 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Splashscreen />
-    {/* <About/> */}
+    <About/>
   </React.StrictMode>
 );
