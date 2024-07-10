@@ -1,10 +1,12 @@
 import './Splashscreen.css';
-import hi from '../../imgs/hi.png';
+import hi from '../../imgs/avatar.gif';
 
 function Splashscreen() {
     return (
         <div className='container'>
-            <img src={hi} alt='hi bitmoji'/>
+            <div className='avatar'>
+                <img src={hi} alt='Vivek Hegde Avatar'/>
+            </div>
             <div className='text'>
                 <div className='iamvivek'> Hi! I am Vivek.</div>
                 <div className='intro'>

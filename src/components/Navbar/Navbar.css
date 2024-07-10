@@ -1,6 +1,4 @@
 .Navbar {
-    background-color: black;
-    font-weight: 600;
     color: white;
     position: fixed; /* Makes the navbar static */
     top: 0;
@@ -13,19 +11,33 @@
     padding-left: 8vh;
     padding-right: 8vh;
     padding-bottom: 3vh;
-    font-size: 3vh;
+}
+
+.solid {
+    background-color: #000000;
+}
+
+.name {
+    font-size: 5vh;
+    font-weight: bolder;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    font-size: 4vh;
 }
 
 ul {
     margin: 0;
     display: flex;
+    align-items: center;
     gap: 2rem;
     list-style: none;
+}
+
+.nav-links li:hover {
+    color: #b16ce2;
 }
 
 .hamburger {
@@ -35,7 +47,7 @@ ul {
 }
 
 .bar {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: #fff;
     margin: 2px 0;
@@ -54,11 +66,11 @@ ul {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
+
     .Navbar {
-        padding-top: 4vh;
-        padding-left: 3vh;
-        padding-right: 3vh;
+        padding-left: 6vh;
+        padding-right: 6vh;
     }
 
     .hamburger {
@@ -77,16 +89,32 @@ ul {
         padding-left: 0;
         position: fixed;
         padding-top:20%;
-        top: 80px;
+        /* top: 120px; */
         left: 0;
         font-size: 3vh;
     }
 
     .name {
-        font-size: 3vh;
+        font-size: 4vh;
     }
 
     .nav-links.active {
         display: flex;
+    }
+}
+
+@media (max-width: 430px) {
+    .Navbar {
+        padding-left: 4vh;
+        padding-right: 4vh;
+    }
+
+    .bar {
+        height: 3.5px;
+        margin: 2px 0;
+    }
+
+    .name {
+        font-size: 3vh;
     }
 }
